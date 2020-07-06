@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Time {
+	public static void main(String[] args)
+	{
+		System.out.println("Input the number of minutes:");
+		Scanner time=new Scanner(System.in);
+		int min=time.nextInt();
+		int years,days;
+		years=(min/60/24/365);
+		days=(min/60/24)%365;
+		System.out.printf("\n %d minutes is approximately %d years and %d days",min,years,days);
+		time.close();
+	}
+}	
