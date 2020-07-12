@@ -1,0 +1,31 @@
+class Employees{
+	String name,address;
+	int year;
+	float salary;
+	
+	void insert(String n,int y,float s,String a) {
+		name=n;
+		year=y;
+		salary=s;
+		address=a;
+	}
+	
+	void display() {
+		System.out.println(name+"     "+year+"       "+salary+"   "+address);
+	}
+}
+
+public class TestEmployee {
+	public static void main(String[] args) {
+		Employees e1=new Employees();
+		Employees e2=new Employees();
+		Employees e3=new Employees();
+		System.out.println("Name   Yearofjoining  Salary    Address");
+		e1.insert("Robert",1994,40000,"64C-Walls Street");
+		e2.insert("Sam   ",2000,30000,"68D-Walls Street");
+		e3.insert("John  ",1990,35000,"26B-Walls Street");
+		e1.display();
+		e2.display();
+		e3.display();
+		}
+}
